@@ -132,6 +132,7 @@ int main() //função principal - inicial do projeto, a 'main'
 		printf("\t1 - Registrar nomes\n"); //colentando informações - print permite texto
 		printf("\t2 - Consultar nomes\n"); //colentando informações - print permite texto
 		printf("\t3 - Deletar nomes\n\n\n"); //colentando informações - print permite texto
+		printf("\t4 - Sair do sistema\n\n");
 		printf("Opção: "); //fim do menu
 	
 		scanf("%d", &opcao); //armazenando escolhas
@@ -151,6 +152,11 @@ int main() //função principal - inicial do projeto, a 'main'
 			case 3://funciona como um SE
 				deletar(); //indicação da função
 			break; //fim da opção
+			
+			case 4:
+				printf("Obrigado por utilizar o sistema!\n");
+				return 0;
+				break;
 			
 			default: //funciona como um SENAO
 				printf("Essa opção não está disponível!\n"); //colentando informações - print permite texto
